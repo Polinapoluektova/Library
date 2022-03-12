@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="819.0" style="-fx-background-color: #F4A460;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.adminAppController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="100.0" prefHeight="403.0" prefWidth="823.0" style="-fx-background-color: #FFFACD;">
+         <children>
+            <Label layoutX="187.0" layoutY="214.0" prefHeight="18.0" prefWidth="141.0" />
+            <Button fx:id="addBookBtn" layoutX="328.0" layoutY="350.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="181.0" style="-fx-background-color: #ffd571;" text="Добавить книгу">
+               <font>
+                  <Font name="Monotype Corsiva" size="19.0" />
+               </font>
+            </Button>
+            <TableView fx:id="baseData" layoutX="44.0" layoutY="47.0" prefHeight="294.0" prefWidth="750.0">
+               <columns>
+                  <TableColumn fx:id="idBook" prefWidth="52.799957275390625" text="idbook" />
+                  <TableColumn fx:id="usBook" prefWidth="128.00000762939453" text="user" />
+                  <TableColumn fx:id="bookName" prefWidth="238.4000244140625" text="bookname" />
+                  <TableColumn fx:id="authorBook" minWidth="0.0" prefWidth="170.39993286132812" text="authorbook" />
+                  <TableColumn fx:id="genreBook" minWidth="0.0" prefWidth="93.5999755859375" text="genrebook" />
+                  <TableColumn fx:id="year" prefWidth="64.80002441406248" text="year" />
+               </columns>
+            </TableView>
+            <Button fx:id="deleteBtn" layoutX="667.0" layoutY="350.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #ffd571;" text="Удалить">
+               <font>
+                  <Font name="Monotype Corsiva" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="editBtn" layoutX="44.0" layoutY="350.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #ffd571;" text="Редактировать">
+               <font>
+                  <Font name="Monotype Corsiva" size="19.0" />
+               </font>
+            </Button>
+            <TextField fx:id="search" layoutX="131.0" layoutY="14.0" prefHeight="26.0" prefWidth="371.0" />
+            <Label layoutX="59.0" layoutY="14.0" prefHeight="26.0" prefWidth="56.0" text="Поиск">
+               <font>
+                  <Font name="Monotype Corsiva" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="293.0" layoutY="22.0" prefHeight="60.0" prefWidth="229.0" text="Библиотека">
+         <font>
+            <Font name="Monotype Corsiva" size="47.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="21.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/image_1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="usersBtn" layoutX="605.0" layoutY="32.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="181.0" style="-fx-background-color: #ffd571;" text="Пользователи">
+         <font>
+            <Font name="Monotype Corsiva" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
