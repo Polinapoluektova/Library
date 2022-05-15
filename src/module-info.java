@@ -6,6 +6,7 @@ module CourseProject {
     requires org.junit.jupiter.api;
     requires junit;
     requires mysql.connector.java;
+    requires java.desktop;
 
     opens sample;
 }

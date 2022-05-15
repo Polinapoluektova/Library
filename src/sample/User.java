@@ -1,10 +1,9 @@
 package sample;
-
 public class User {
-    private String firstName;
-    private String lastName;
-    private String login;
-    private String password;
+    private static String firstName;
+    private static String lastName;
+    private static String login;
+    private static String password;
     private String role;
 
     public User(String firstName, String lastName,String login, String password, String role) {
@@ -18,7 +17,7 @@ public class User {
     public User() {
     }
 
-    public String getNameOne() {
+    public static String getNameOne() {
         return firstName;
     }
 
@@ -26,7 +25,7 @@ public class User {
         this.firstName = firstName;
     }
 
-    public String getNameTwo() {
+    public static String getNameTwo() {
         return lastName;
     }
 
@@ -34,7 +33,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getLogin() {
+    public static String getLogin() {
         return login;
     }
 
@@ -42,7 +41,7 @@ public class User {
         this.login = login;
     }
 
-    public String getPassword() {
+    public static String getPassword() {
         return password;
     }
 

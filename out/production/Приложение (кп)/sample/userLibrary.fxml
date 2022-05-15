@@ -25,13 +25,6 @@
                   <Font name="Monotype Corsiva" size="19.0" />
                </font>
             </Button>
-            <TextField fx:id="search" layoutX="131.0" layoutY="14.0" prefHeight="26.0" prefWidth="371.0" />
-            <Label layoutX="59.0" layoutY="14.0" prefHeight="26.0" prefWidth="56.0" text="Поиск">
-               <font>
-                  <Font name="Monotype Corsiva" size="20.0" />
-               </font>
-            </Label>
-            <Button fx:id="backBtn" layoutX="590.0" layoutY="15.0" mnemonicParsing="false" text="Button" />
          </children>
       </AnchorPane>
       <Label layoutX="293.0" layoutY="22.0" prefHeight="60.0" prefWidth="229.0" text="Библиотека">
@@ -44,5 +37,10 @@
             <Image url="@assets/image_1.png" />
          </image>
       </ImageView>
+      <Button fx:id="backBtn" layoutX="697.0" layoutY="40.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #ffd571;" text="Назад">
+         <font>
+            <Font name="Monotype Corsiva" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
